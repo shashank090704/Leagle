@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+    background-image: url(quiz\ background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.header{
+    width: 100%;
+    height: 10%;
+    /* background-color: black; */
+}
+.lower{
+    height: 10%;
+    /* background-color: blue; */
+}
+.content{
+        /* background-color: beige; */
+        height: 80%;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+#quiz{
+   font-size: 482%;
+   margin-left: 5%;
+   font-family: "Anton";
+}
+#question{
+    font-size: 180%;
+    margin-left: 5%;
+    font-family: sans-serif;
+    margin-top: 1%;
+    font-weight: lighter;
+}
+.options{
+    height: 41%;
+    width: 53%;
+    margin-left: 5%;
+    margin-top: 1%;
+    
+
+}
+button{
+    background-color: transparent;
+    height: 20%;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 97%;
+    border: none;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    border: 3px solid black;
+    
+}
+.option{
+    font-size: larger;
+    
+}
+.cc{
+    background-color: transparent;
+}
+.cc:hover{
+    background-color: rgba(225,225,225, .3);
+}
+
+
+/* button:hover{
+    background-color: rgba(225,225,225, .3);
+} */
+
+
+
+#nextques{
+    height: 7%;
+    width: 6%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    margin-top: 2%;
+    display: inline block;
+    margin-left: 5%;
+    text-align: center;
+    font-size: large;
+    
+}
+#score{
+    height: 7%;
+    width: 6%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    margin-top: 2%;
+    display: inline block;
+    margin-left: 5%;
+    text-align: center;
+    font-size: large;
+}
+#nextques:hover , #score:hover{
+    background-color: rgba(225,225,225, .3);
+}
+.correct{
+    background-color: rgba(0,225,0, .3);
+}
+.wrong{
+    background-color: rgba(225,0,0, .3);
+}
+/* #a:hover, #b:hover {
+    background-color: rgba(225,225,225, .3);
+}
+    #c:hover, #d:hover{
+        background-color: rgba(225,225,225, .3);
+    } */
+
+#score{
+     width: 45%;
+     background-color: rgba(165, 42, 42, 0.677);
+      
+     
+
+    }
+
+    .score{
+        margin-top: -600px;
+        margin-left: 900px;
+        width: 25%;
+        
+    }
+
+
+    #nextques{
+        width: 45%;
+        background-color: rgba(165, 42, 42, 0.677);
+        font: 300;
+        
+         
+        
+   
+       }
+   
+       .next{
+           margin-top: 50px; 
+           /* margin-left: 900px;  */
+           width: 40%;
+           font-size: 50px;
+           
+           
+       }
+    

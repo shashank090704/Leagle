@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+    background-image: url(quiz\ background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    /* background-color: black; */
+}
+
+.lower {
+    height: 10%;
+    /* background-color: blue; */
+}
+
+.content {
+    /* background-color: beige; */
+    height: 80%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#quiz {
+    font-size: 482%;
+    margin-left: 2.5%;
+    font-family: "Anton";
+}
+
+#question {
+    font-size: 180%;
+    margin-left: 5%;
+    font-family: sans-serif;
+    margin-top: 1%;
+    font-weight: lighter;
+}
+
+.options {
+    height: 41%;
+    width: 53%;
+    margin-left: 5%;
+    margin-top: 1%;
+
+
+}
+
+button {
+    background-color: transparent;
+    height: 20%;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 97%;
+    border: none;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    border: 3px solid black;
+
+}
+
+.option {
+    font-size: larger;
+
+}
+
+.cc {
+    background-color: transparent;
+}
+
+.cc:hover {
+    background-color: rgba(225, 225, 225, .3);
+}
+
+
+/* button:hover{
+    background-color: rgba(225,225,225, .3);
+} */
+
+
+
+#nextques {
+    height: 7%;
+    width: 6%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    margin-top: 2%;
+    display: inline block;
+    margin-left: 5%;
+    text-align: center;
+    font-size: large;
+
+}
+
+#score {
+    height: 7%;
+    width: 6%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    margin-top: 2%;
+    display: inline block;
+    margin-left: 5%;
+    text-align: center;
+    font-size: large;
+}
+
+#nextques:hover,
+#score:hover {
+    background-color: rgba(225, 225, 225, .3);
+}
+
+.correct {
+    background-color: rgba(0, 225, 0, .3);
+}
+
+.wrong {
+    background-color: rgba(225, 0, 0, .3);
+}
+
+/* #a:hover, #b:hover {
+    background-color: rgba(225,225,225, .3);
+}
+    #c:hover, #d:hover{
+        background-color: rgba(225,225,225, .3);
+    } */
+
+#score {
+    width: 45%;
+    background-color: rgba(165, 42, 42, 0.677);
+
+
+
+}
+
+.score {
+    margin-top: -600px;
+    margin-left: 900px;
+    width: 25%;
+
+}
+
+
+#nextques {
+    width: 45%;
+    background-color: rgba(165, 42, 42, 0.677);
+    font: 300;
+
+
+
+
+}
+
+.next {
+    margin-top: 50px;
+    /* margin-left: 900px;  */
+    width: 40%;
+    font-size: 50px;
+
+
+}
+
+.clock {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 45%;
+    border: 8px solid rgb(234, 11, 11);
+    border-radius: 50%;
+    background-color: rgb(232, 226, 226);
+    margin-top: -600px;
+}
+
+.center {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgb(240, 234, 234);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    width: 50%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+}
+
+.second-hand {
+    animation: rotateClock 15s linear infinite paused;
+}
+
+@keyframes rotateClock {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(450deg);
+        
+    }
+}
+
+.timer-text {
+    margin-top:40px;
+    margin-left: 10px;
+    font-size: 24px;
+} 
+
+
+
+
+
+
+
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #f0f0f0;
+    padding: 0;
+    margin: 0;
+}
+
+.clock {
+    width: 100px;
+    height: 100px;
+    border: 20px solid black;
+    border-radius: 50%;
+    position: absolute;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* Fix for the hands positioning */
+}
+
+.hand {
+    width: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+    height: 6px;
+}
+
+.minute-hand {
+    height: 4px;
+}
+
+.second-hand {
+    height: 2px;
+    background: red;
+}
+
+.number {
+    position: absolute;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+}
+
+.number1  { top: 20%; left: 85%; }
+.number2  { top: 35%; left: 92%; }
+.number3  { top: 50%; left: 97%; }
+.number4  { top: 65%; left: 92%; }
+.number5  { top: 80%; left: 85%; }
+.number6  { top: 85%; left: 50%; }
+.number7  { top: 80%; left: 15%; }
+.number8  { top: 65%; left: 8%; }
+.number9  { top: 50%; left: 3%; }
+.number10 { top: 35%; left: 8%; }
+.number11 { top: 20%; left: 15%; }
+.number12 { top: 15%; left: 50%; }
